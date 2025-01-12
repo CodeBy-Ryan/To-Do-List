@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <!-- Define que o documento segue a especificação HTML5 -->
+    <meta charset="UTF-8" />
+    <!-- Define o conjunto de caracteres como UTF-8, que é ideal para suportar caracteres especiais, como acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Faz com que a página seja responsiva, ajustando-se ao tamanho da tela do dispositivo -->
+
+    <title>To-Do List</title>
+    <!-- Define o título da página que aparece na aba do navegador -->
+
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <!-- Importa o arquivo de estilos CSS para aplicar o design à página -->
+  </head>
+  <body>
+    <!-- Início do corpo da página, onde todo o conteúdo visível é definido -->
+
+    <div class="container">
+      <!-- Div principal que contém todos os elementos da página e ajuda na centralização -->
+
+      <h1>To-Do List</h1>
+      <!-- Título da página que é exibido como um cabeçalho principal -->
+      <h5>Code By Ryan</h5>
+      <!-- Subtítulo da página que é exibido como um cabeçalho principal -->
+
+      <div class="input-container">
+        <!-- Div usada para agrupar o campo de entrada e o botão, organizando o layout -->
+
+        <input
+          type="text"
+          id="task-input"
+          placeholder="Adicione uma nova tarefa"
+        />
+        <!-- Campo de entrada de texto onde o usuário digita a tarefa que deseja adicionar -->
+        <!-- O atributo "placeholder" exibe um texto de sugestão enquanto o campo está vazio -->
+        <!-- O atributo "id" identifica este campo para ser manipulado no JavaScript -->
+
+        <button id="add-task-btn">Adicionar</button>
+        <!-- Botão que o usuário clica para adicionar a tarefa à lista -->
+        <!-- O atributo "id" permite que o JavaScript identifique e adicione funcionalidade ao botão -->
+      </div>
+
+      <ul id="task-list">
+        <!-- Lista não ordenada onde as tarefas adicionadas pelo usuário serão exibidas -->
+        <!-- O atributo "id" permite que o JavaScript manipule os itens da lista -->
+      </ul>
+    </div>
+
+    <script src="/JS/script.js"></script>
+    <!-- Importa o arquivo JavaScript que controla as funcionalidades da aplicação -->
+  </body>
+</html>

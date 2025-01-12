@@ -1,0 +1,194 @@
+/* Geral */
+body {
+  font-family: Arial, sans-serif;
+  /* Define a fonte padrão da página como Arial, ou outra similar sem serifa */
+
+  background-color: #ffffff;
+  /* Define a cor de fundo da página */
+
+  margin: 0;
+  padding: 0;
+  /* Remove margens e espaçamentos padrões do corpo */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Centraliza o conteúdo no meio da tela, tanto horizontal quanto verticalmente */
+
+  height: 100vh;
+  /* Define a altura da área visível como 100% da altura da janela do navegador */
+}
+
+/* Container */
+.container {
+  background: white;
+  /* Define o fundo do container como branco */
+
+  padding: 20px;
+  /* Adiciona espaçamento interno de 20px ao redor de todo o conteúdo */
+
+  border-radius: 10px;
+  /* Arredonda os cantos do container com um raio de 10px */
+
+  box-shadow: 0 4px 8px rgba(49, 138, 255, 0.692);
+  /* Adiciona uma sombra ao redor do container para dar uma aparência elevada */
+
+  width: 300px;
+  /* Define a largura fixa do container como 300px */
+
+  text-align: center;
+  /* Centraliza o texto dentro do container */
+}
+
+/* Títulos */
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  /* Define a fonte do h1 para uma fonte monoespaçada */
+  font-size: 32px;
+  color: #333;
+  /* Define a cor do texto como um cinza escuro */
+  margin-bottom: 10px;
+  /* Adiciona um pequeno espaço abaixo do título */
+}
+
+h5 {
+  font-family: "Pixelify Sans";
+  /* Define a fonte do h5 para Georgia */
+  font-size: 18px;
+  color: #555;
+  /* Define a cor do texto como um cinza mais claro */
+  margin-top: 0;
+  margin-bottom: 20px;
+  /* Adiciona um pequeno espaço abaixo do subtítulo */
+  font-style: normal;
+  /* Deixa o texto do h5 em normal */
+}
+
+/* Input e botão */
+.input-container {
+  display: flex;
+  /* Coloca o campo de texto e o botão lado a lado (layout flexível) */
+
+  margin-bottom: 20px;
+  /* Adiciona um espaço abaixo do grupo de entrada e botão */
+}
+
+#task-input {
+  flex: 1;
+  /* Faz o campo de entrada ocupar todo o espaço disponível no container flex */
+
+  padding: 10px;
+  /* Adiciona espaçamento interno ao redor do texto no campo */
+
+  font-size: 16px;
+  /* Define o tamanho da fonte dentro do campo */
+
+  border: 1px solid #ccc;
+  /* Adiciona uma borda cinza clara ao redor do campo */
+
+  border-radius: 5px;
+  /* Arredonda os cantos do campo de entrada */
+}
+
+#add-task-btn {
+  padding: 10px 15px;
+  /* Adiciona espaçamento interno no botão, horizontal e verticalmente */
+
+  font-size: 16px;
+  /* Define o tamanho do texto do botão */
+
+  background-color: #007bffa2;
+  /* Define a cor de fundo do botão como azul */
+
+  color: white;
+  /* Define a cor do texto no botão como branca */
+
+  border: none;
+  /* Remove qualquer borda padrão ao redor do botão */
+
+  border-radius: 5px;
+  /* Arredonda os cantos do botão */
+
+  cursor: pointer;
+  /* Troca o cursor para uma mãozinha ao passar sobre o botão */
+}
+
+#add-task-btn:hover {
+  background-color: #0056b3;
+  /* Altera a cor de fundo para um tom de azul mais escuro ao passar o mouse */
+}
+
+/* Lista de tarefas */
+#task-list {
+  list-style: none;
+  /* Remove os marcadores padrão (bolinhas) das listas */
+
+  padding: 0;
+  /* Remove o espaçamento interno padrão das listas */
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Organiza os itens da tarefa em linha, com espaço entre o texto e o botão */
+
+  padding: 10px;
+  /* Adiciona espaçamento interno ao redor do conteúdo da tarefa */
+
+  border: 1px solid #ccc;
+  /* Adiciona uma borda cinza clara ao redor de cada item */
+
+  border-radius: 5px;
+  /* Arredonda os cantos dos itens da lista */
+
+  margin-bottom: 10px;
+  /* Adiciona espaço entre os itens da lista */
+}
+
+.task-item.completed {
+  background-color: #e0e0e0;
+  /* Muda o fundo da tarefa para um cinza claro quando concluída */
+
+  text-decoration: line-through;
+  /* Adiciona um efeito de riscar no texto da tarefa */
+
+  color: gray;
+  /* Muda a cor do texto para cinza */
+}
+
+.task-item span {
+  flex: 1;
+  /* Faz o texto da tarefa ocupar o máximo de espaço possível */
+}
+
+/* Adiciona estilos ao checkbox */
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+  /* Adiciona um espaço à direita do checkbox */
+}
+
+.task-item button {
+  background-color: rgb(44, 44, 44);
+  /* Define a cor de fundo do botão de exclusão como vermelho */
+
+  color: white;
+  /* Define a cor do texto do botão como branca */
+
+  border: none;
+  /* Remove a borda padrão do botão */
+
+  border-radius: 5px;
+  /* Arredonda os cantos do botão */
+
+  padding: 5px 10px;
+  /* Adiciona espaçamento interno no botão */
+
+  cursor: pointer;
+  /* Troca o cursor para uma mãozinha ao passar sobre o botão */
+}
+
+.task-item button:hover {
+  background-color: rgb(45, 154, 255);
+  /* Altera a cor de fundo do botão para vermelho escuro ao passar o mouse */
+}
